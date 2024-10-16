@@ -2,11 +2,11 @@
 C-Programming
 ---------------------------------------------------------------------
 Topic        : Loop- For Loop
-Description  : Pattern 2
-                1
-                12
-                123
-                1234
+Description  : Pattern 8
+                *******
+                 *****
+                  ***
+                   *
 Programmer   : S. M. Nasrullah Hamim
                     hamim321182@gmail.com
 Date         : 16/10/2024
@@ -15,14 +15,22 @@ Date         : 16/10/2024
 #include<stdio.h>
 int main()
 {
-    int i,j,n;
+    int i,j,k,n;
+    //user input
     printf("Give row number:");
     scanf("%d",&n);
 
-    for(i=1;i<=n;i++)
+    for(k=1; k<=n; k++)
     {
-        for(j=1;j<=i;j++)
-            printf("%d",j);
-        printf("\n");
+       for (i=1; i<k; i++)
+        {
+            printf(" ");
+        }
+       for (j=1; j<=((n*2+1)-(k*2)); j++)
+        {
+            printf("*");
+        }
+       printf("\n");
     }
 }
+

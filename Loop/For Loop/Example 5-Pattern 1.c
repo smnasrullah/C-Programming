@@ -3,9 +3,10 @@ C-Programming
 ---------------------------------------------------------------------
 Topic        : Loop- For Loop
 Description  : Pattern 1
-               *
-               **
-               ***
+                *
+                **
+                ***
+                ****
 Programmer   : S. M. Nasrullah Hamim
                     hamim321182@gmail.com
 Date         : 16/10/2024
@@ -16,7 +17,7 @@ Date         : 16/10/2024
 int main()
 {
     int i,j,n;
-    printf("Give a positive number:");
+    printf("Give row number:");
     scanf("%d",&n);
 
     for(i=1;i<=n;i++)
