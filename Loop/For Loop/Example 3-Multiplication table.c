@@ -2,26 +2,24 @@
 C-Programming
 ---------------------------------------------------------------------
 Topic        : Loop- For Loop
-Description  : Basic structure of for loop
+Description  : Mumtiolication table
 Programmer   : S. M. Nasrullah Hamim
                     hamim321182@gmail.com
 Date         : 16/10/2024
 ---------------------------------------------------------------------
 */
-
 #include<stdio.h>
 int main()
 {
-    int i;
-    /*
-    for( initialization; test-condition; increment)
-       {
-         body of the loop
-       }
-    */
+    int a,b,sum;
+    //user input
+    printf("Give a positive integer number:");
+    scanf("%d", &a);
+    printf("_________________\n");
 
-    for(i=1; i<=10; i++)
+    for(b=1;b<11;b++)
     {
-        printf("%d\n", i);
+        sum=a*b;
+        printf("%d X %d = %d\n", a,b,sum);
     }
 }
