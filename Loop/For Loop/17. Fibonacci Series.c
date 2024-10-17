@@ -2,34 +2,28 @@
 C-Programming
 ---------------------------------------------------------------------
 Topic        : Loop- For Loop
-Description  : Pattern 8
-                *******
-                 *****
-                  ***
-                   *
+Description  : Fibonacci Series
 Programmer   : S. M. Nasrullah Hamim
                     hamim321182@gmail.com
 Date         : 17/10/2024
 ---------------------------------------------------------------------
 */
+
 #include<stdio.h>
 int main()
 {
-    int i,j,k,n;
+    int i,n, f1=0, f2=1, f;
     //user input
-    printf("Give row number:");
+    printf("Enter the value of terms:");
     scanf("%d",&n);
 
-    for(k=1; k<=n; k++)
+    printf("Fibonacci series of %d terms: \n%d,%d,",n,f1,f2);
+    for (i=3; i<=n; ++i)
     {
-       for (i=1; i<k; i++)
-        {
-            printf(" ");
-        }
-       for (j=1; j<=((n*2+1)-(k*2)); j++)
-        {
-            printf("*");
-        }
-       printf("\n");
+        f= f1+f2;
+        f1 = f2;
+        f2 = f;
+        printf("%d,",f);
     }
+    printf("\n");
 }

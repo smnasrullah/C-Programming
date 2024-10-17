@@ -9,7 +9,7 @@ Description  : Pattern 9
                 0101
 Programmer   : S. M. Nasrullah Hamim
                     hamim321182@gmail.com
-Date         : 16/10/2024
+Date         : 17/10/2024
 ---------------------------------------------------------------------
 */
 #include <stdio.h>
